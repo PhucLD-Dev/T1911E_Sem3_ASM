@@ -1,0 +1,37 @@
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\UWP XAML01.csprojAssemblyReference.cache
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\App.g.i.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\App.g.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\baitaap.g.i.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\baitaap.g.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Canvas.g.i.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Canvas.g.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Grid.g.i.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Grid.g.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\MainPage.g.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\StackPanel .g.i.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\StackPanel .g.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\WrapGrid.g.i.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\WrapGrid.g.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Align with panel.g.i.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Align with panel.g.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\ScrollViewer.g.i.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\ScrollViewer.g.cs
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\App.xaml
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Canvas.xaml
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Grid.xaml
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\MainPage.xaml
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\StackPanel .xaml
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\WrapGrid.xaml
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Align with panel.xaml
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\baitaap.xaml
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\ScrollViewer.xaml
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\App.xbf
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Canvas.xbf
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Grid.xbf
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\MainPage.xbf
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\StackPanel .xbf
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\WrapGrid.xbf
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\Align with panel.xbf
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\baitaap.xbf
+C:\Users\phuch\source\repos\Ky3\UWP XAML01\UWP XAML01\obj\x86\Debug\ScrollViewer.xbf
