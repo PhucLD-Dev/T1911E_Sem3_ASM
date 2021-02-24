@@ -1,0 +1,11 @@
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\FakeNews.csprojAssemblyReference.cache
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\App.g.i.cs
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\App.g.cs
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\MainPage.g.cs
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\App.xaml
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\MainPage.xaml
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\App.xbf
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\MainPage.xbf
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\FakeNews\FakeNews\obj\x86\Debug\XamlSaveStateFile.xml
