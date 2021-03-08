@@ -1,0 +1,1 @@
+C:\fptaptech\sem3\1.UWP\Win10\Examples\UWP-019\UWP-019\After\NavigationExample\NavigationExample\NavigationExample.csproj;arm
