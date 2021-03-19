@@ -24,11 +24,11 @@ namespace FakeNews
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private ObservableCollection<NewsItems> NewsItems;
+        private ObservableCollection<NewsItem> NewsItems;
         public MainPage()
         {
             this.InitializeComponent();
-            NewsItems = new ObservableCollection<NewsItems>();
+            NewsItems = new ObservableCollection<NewsItem>();
         }
         private void HumburgerButton_Click(object sender, RoutedEventArgs e)
         {
@@ -40,7 +40,7 @@ namespace FakeNews
             if (Financial.IsSelected)
             {
                 NewsManager.GetNews("Financial", NewsItems);
-                TitleTextBlock.Text = Financial;
+                TitleTextBlock.Text = "Financial";
             }
             else if (Food.IsSelected)
             {

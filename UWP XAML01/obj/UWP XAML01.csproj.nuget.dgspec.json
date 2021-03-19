@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\phuch\\source\\repos\\Ky3\\UWP XAML01\\UWP XAML01\\UWP XAML01.csproj": {}
+    "C:\\Users\\phuch\\source\\repos\\T1911E_Sem3_ASM\\UWP XAML01\\UWP XAML01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\phuch\\source\\repos\\Ky3\\UWP XAML01\\UWP XAML01\\UWP XAML01.csproj": {
+    "C:\\Users\\phuch\\source\\repos\\T1911E_Sem3_ASM\\UWP XAML01\\UWP XAML01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\phuch\\source\\repos\\Ky3\\UWP XAML01\\UWP XAML01\\UWP XAML01.csproj",
+        "projectUniqueName": "C:\\Users\\phuch\\source\\repos\\T1911E_Sem3_ASM\\UWP XAML01\\UWP XAML01.csproj",
         "projectName": "UWP XAML01",
-        "projectPath": "C:\\Users\\phuch\\source\\repos\\Ky3\\UWP XAML01\\UWP XAML01\\UWP XAML01.csproj",
+        "projectPath": "C:\\Users\\phuch\\source\\repos\\T1911E_Sem3_ASM\\UWP XAML01\\UWP XAML01.csproj",
         "packagesPath": "C:\\Users\\phuch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\phuch\\source\\repos\\Ky3\\UWP XAML01\\UWP XAML01\\obj\\",
+        "outputPath": "C:\\Users\\phuch\\source\\repos\\T1911E_Sem3_ASM\\UWP XAML01\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

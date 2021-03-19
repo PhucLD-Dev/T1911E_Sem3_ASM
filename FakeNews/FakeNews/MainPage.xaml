@@ -14,6 +14,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
         <RelativePanel>
             <Button Name="HumburgerButton"
                     RelativePanel.AlignLeftWithPanel="True"
@@ -23,7 +24,7 @@
                     Width="45"
                     Height="45"
                     HorizontalAlignment="Center"
-                    Click="HumbergerButton_Click"
+                    Click="HumburgerButton_Click"
                     />
             <TextBlock Name="TitleTextBlock"
                        RelativePanel.RightOf="HumburgerButton"
@@ -51,6 +52,17 @@
                                 Text="&#xE80F;"
                                 FontFamily="Sogoe MDL2 Assets"
                                 FontSize="20"/>
+                            <TextBlock Text="Financial"
+                                       FontSize="18"
+                                       Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Food">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
+                                Text="&#xE80F;"
+                                FontFamily="Sogoe MDL2 Assets"
+                                FontSize="20"/>
                             <TextBlock Text="Food"
                                        FontSize="18"
                                        Margin="20,0,0,0"/>
@@ -60,7 +72,7 @@
             </SplitView.Pane>
             <SplitView.Content>
                 <GridView Name="NewsItemGrid"
-                          ItemsSource="{}x:Bind NewsItems}"
+                          ItemsSource="{x:Bind NewsItems}"
                           HorizontalAlignment="Stretch"
                           Margin="10,0,0,0">
                 <GridView.ItemTemplate>

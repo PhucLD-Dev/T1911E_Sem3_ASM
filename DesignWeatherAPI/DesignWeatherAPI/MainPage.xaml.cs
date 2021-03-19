@@ -31,7 +31,7 @@ namespace DesignWeatherAPI
          private async void InitJSON()
         {
             var url = "http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/353412?" +
-                "apikey=93Qg780lHwYM4SO58n7DFPLqHg4oKADn&metric=true";
+                "apikey=93Qg780lHwYM4SO58n7DFPLqHg4oKADn&language=vi-vn&metric=true";
             var list = await WeatherJSON.GetJSON(url) as List<WeatherJSON>;
             Debug.WriteLine("Count:" + list.Count);
 
@@ -59,7 +59,7 @@ namespace DesignWeatherAPI
         private async void InitEachDaysJSON()
         {
             var urlFiveDay = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/353412?" +
-                "apikey=93Qg780lHwYM4SO58n7DFPLqHg4oKADn&metric=true";
+                "apikey=93Qg780lHwYM4SO58n7DFPLqHg4oKADn&language=vi-vn&metric=true";
             var obj = await WeatherEachDay.GetWeatherEach(urlFiveDay) as WeatherEachDay;
             obj.DailyForecasts.ForEach(it =>
             {

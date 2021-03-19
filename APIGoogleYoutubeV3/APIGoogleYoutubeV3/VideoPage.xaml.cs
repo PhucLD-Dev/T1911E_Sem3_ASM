@@ -39,9 +39,7 @@ namespace APIGoogleYoutubeV3
             {
                 if (NetworkInterface.GetIsNetworkAvailable())
                 {
-                    video = e.Parameter as Video;
-                    var Url = await YouTube.GetVideoUriAsync(video.Id, YouTubeQuality.Quality1080P);
-                    Player.Source = Url.Uri;
+                    
                 }
                 else
                 {

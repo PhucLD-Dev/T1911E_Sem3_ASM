@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\phuch\source\repos\T1911E_Sem3_ASM\DesignWeatherAPI\DesignWeatherAPI\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-03-08T12:49:51.447</Modified>
+      <Modified>2021-03-10T11:45:29.977</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\phuch\source\repos\T1911E_Sem3_ASM\DesignWeatherAPI\DesignWeatherAPI\bin\x64\Debug\DesignWeatherAPI.exe">
       <PackagePath>entrypoint\DesignWeatherAPI.exe</PackagePath>
-      <Modified>2021-03-08T12:49:49.647</Modified>
+      <Modified>2021-03-10T11:45:28.683</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -94,11 +94,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuch\source\repos\T1911E_Sem3_ASM\DesignWeatherAPI\DesignWeatherAPI\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-03-08T12:49:49.564</Modified>
+      <Modified>2021-03-10T11:45:28.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuch\source\repos\T1911E_Sem3_ASM\DesignWeatherAPI\DesignWeatherAPI\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-03-08T12:49:49.564</Modified>
+      <Modified>2021-03-10T11:45:28.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -110,7 +110,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuch\source\repos\T1911E_Sem3_ASM\DesignWeatherAPI\DesignWeatherAPI\bin\x64\Debug\Core\DesignWeatherAPI.exe">
       <PackagePath>DesignWeatherAPI.exe</PackagePath>
-      <Modified>2021-03-08T12:49:51.432</Modified>
+      <Modified>2021-03-10T11:45:29.947</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

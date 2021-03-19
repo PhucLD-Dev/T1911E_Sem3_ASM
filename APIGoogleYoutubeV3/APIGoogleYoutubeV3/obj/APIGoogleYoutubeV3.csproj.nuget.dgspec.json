@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\phuch\\source\\repos\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3.csproj": {}
+    "C:\\Users\\phuch\\source\\repos\\T1911E_Sem3_ASM\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\phuch\\source\\repos\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3.csproj": {
+    "C:\\Users\\phuch\\source\\repos\\T1911E_Sem3_ASM\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\phuch\\source\\repos\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3.csproj",
+        "projectUniqueName": "C:\\Users\\phuch\\source\\repos\\T1911E_Sem3_ASM\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3.csproj",
         "projectName": "APIGoogleYoutubeV3",
-        "projectPath": "C:\\Users\\phuch\\source\\repos\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3.csproj",
+        "projectPath": "C:\\Users\\phuch\\source\\repos\\T1911E_Sem3_ASM\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3.csproj",
         "packagesPath": "C:\\Users\\phuch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\phuch\\source\\repos\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3\\obj\\",
+        "outputPath": "C:\\Users\\phuch\\source\\repos\\T1911E_Sem3_ASM\\APIGoogleYoutubeV3\\APIGoogleYoutubeV3\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

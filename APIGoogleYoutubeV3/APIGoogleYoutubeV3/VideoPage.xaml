@@ -10,13 +10,17 @@
     <Page.TopAppBar>
         <AppBar>
             <AppBarButton x:Name="btnHomePage" Icon="Back" Click="btnHomePage_Click">
-                
+
             </AppBarButton>
         </AppBar>
     </Page.TopAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="201*"/>
+            <RowDefinition Height="299*"/>
+        </Grid.RowDefinitions>
         <MediaElement x:Name="Player" Width="Auto" AutoPlay="False"
-              AreTransportControlsEnabled="True"/>
+              AreTransportControlsEnabled="True" Grid.RowSpan="2"/>
     </Grid>
 </Page>

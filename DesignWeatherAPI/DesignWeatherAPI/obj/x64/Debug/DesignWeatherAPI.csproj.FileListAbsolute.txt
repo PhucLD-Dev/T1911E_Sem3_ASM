@@ -42,3 +42,4 @@ C:\Users\phuch\source\repos\T1911E_Sem3_ASM\DesignWeatherAPI\DesignWeatherAPI\ob
 C:\Users\phuch\source\repos\T1911E_Sem3_ASM\DesignWeatherAPI\DesignWeatherAPI\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\phuch\source\repos\T1911E_Sem3_ASM\DesignWeatherAPI\DesignWeatherAPI\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\phuch\source\repos\T1911E_Sem3_ASM\DesignWeatherAPI\DesignWeatherAPI\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885058160000000.json
+C:\Users\phuch\source\repos\T1911E_Sem3_ASM\DesignWeatherAPI\DesignWeatherAPI\obj\x64\Debug\DesignWeatherAPI.csprojAssemblyReference.cache
