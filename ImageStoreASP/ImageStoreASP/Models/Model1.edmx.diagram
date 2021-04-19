@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9a5949eaddad4e859822cea6a319705c" Name="Diagram1">
+        <EntityTypeShape EntityType="ImageCodeModel.CustomerPayment" Width="1.5" PointX="3.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageCodeModel.Customer" Width="1.5" PointX="5.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageCodeModel.Material" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageCodeModel.OrderMaterial" Width="1.5" PointX="8.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageCodeModel.Order" Width="1.5" PointX="5.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageCodeModel.OrderSize" Width="1.5" PointX="3.625" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageCodeModel.Payment" Width="1.5" PointX="1.625" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageCodeModel.Size" Width="1.5" PointX="3.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageCodeModel.Staff" Width="1.5" PointX="8.25" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="ImageCodeModel.FK__CustomerP__Custo__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="ImageCodeModel.FK__CustomerP__Payme__1ED998B2" ManuallyRouted="false" />
+        <AssociationConnector Association="ImageCodeModel.FK__Orders__Customer__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="ImageCodeModel.FK__OrderMate__Mater__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="ImageCodeModel.FK__OrderMate__Order__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="ImageCodeModel.FK__Orders__StaffId__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="ImageCodeModel.FK__OrderSize__Order__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="ImageCodeModel.FK__OrderSize__SizeI__2A4B4B5E" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

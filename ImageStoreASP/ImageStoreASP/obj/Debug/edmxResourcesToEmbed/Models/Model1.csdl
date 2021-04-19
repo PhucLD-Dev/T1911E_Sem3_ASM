@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ImageCodeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CustomerPayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="PaymentId" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK__CustomerP__Custo__1DE57479" FromRole="CustomerPayment" ToRole="Customers" />
+    <NavigationProperty Name="Payment" Relationship="Self.FK__CustomerP__Payme__1ED998B2" FromRole="CustomerPayment" ToRole="Payments" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="F_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="L_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="CustomerPayments" Relationship="Self.FK__CustomerP__Custo__1DE57479" FromRole="Customers" ToRole="CustomerPayment" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Customer__22AA2996" FromRole="Customers" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="MaterialID" />
+    </Key>
+    <Property Name="MaterialID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <NavigationProperty Name="OrderMaterials" Relationship="Self.FK__OrderMate__Mater__267ABA7A" FromRole="Materials" ToRole="OrderMaterial" />
+  </EntityType>
+  <EntityType Name="OrderMaterial">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="Int32" />
+    <Property Name="MaterialId" Type="Int32" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Material" Relationship="Self.FK__OrderMate__Mater__267ABA7A" FromRole="OrderMaterial" ToRole="Materials" />
+    <NavigationProperty Name="Order" Relationship="Self.FK__OrderMate__Order__25869641" FromRole="OrderMaterial" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="StaffId" Type="Int32" />
+    <Property Name="CustomerId" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK__Orders__Customer__22AA2996" FromRole="Orders" ToRole="Customers" />
+    <NavigationProperty Name="OrderMaterials" Relationship="Self.FK__OrderMate__Order__25869641" FromRole="Orders" ToRole="OrderMaterial" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK__Orders__StaffId__21B6055D" FromRole="Orders" ToRole="Staffs" />
+    <NavigationProperty Name="OrderSizes" Relationship="Self.FK__OrderSize__Order__29572725" FromRole="Orders" ToRole="OrderSize" />
+  </EntityType>
+  <EntityType Name="OrderSize">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="Int32" />
+    <Property Name="SizeId" Type="Int32" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK__OrderSize__Order__29572725" FromRole="OrderSize" ToRole="Orders" />
+    <NavigationProperty Name="Size" Relationship="Self.FK__OrderSize__SizeI__2A4B4B5E" FromRole="OrderSize" ToRole="Sizes" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Method" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="CustomerPayments" Relationship="Self.FK__CustomerP__Payme__1ED998B2" FromRole="Payments" ToRole="CustomerPayment" />
+  </EntityType>
+  <EntityType Name="Size">
+    <Key>
+      <PropertyRef Name="SizeID" />
+    </Key>
+    <Property Name="SizeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <NavigationProperty Name="OrderSizes" Relationship="Self.FK__OrderSize__SizeI__2A4B4B5E" FromRole="Sizes" ToRole="OrderSize" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="StaffID" />
+    </Key>
+    <Property Name="StaffID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="F_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="L_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__StaffId__21B6055D" FromRole="Staffs" ToRole="Orders" />
+  </EntityType>
+  <Association Name="FK__CustomerP__Custo__1DE57479">
+    <End Role="Customers" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="CustomerPayment" Type="Self.CustomerPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="CustomerPayment">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CustomerP__Payme__1ED998B2">
+    <End Role="Payments" Type="Self.Payment" Multiplicity="0..1" />
+    <End Role="CustomerPayment" Type="Self.CustomerPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payments">
+        <PropertyRef Name="PaymentID" />
+      </Principal>
+      <Dependent Role="CustomerPayment">
+        <PropertyRef Name="PaymentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__Customer__22AA2996">
+    <End Role="Customers" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderMate__Mater__267ABA7A">
+    <End Role="Materials" Type="Self.Material" Multiplicity="0..1" />
+    <End Role="OrderMaterial" Type="Self.OrderMaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materials">
+        <PropertyRef Name="MaterialID" />
+      </Principal>
+      <Dependent Role="OrderMaterial">
+        <PropertyRef Name="MaterialId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderMate__Order__25869641">
+    <End Role="Orders" Type="Self.Order" Multiplicity="0..1" />
+    <End Role="OrderMaterial" Type="Self.OrderMaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="OrderMaterial">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__StaffId__21B6055D">
+    <End Role="Staffs" Type="Self.Staff" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staffs">
+        <PropertyRef Name="StaffID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="StaffId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderSize__Order__29572725">
+    <End Role="Orders" Type="Self.Order" Multiplicity="0..1" />
+    <End Role="OrderSize" Type="Self.OrderSize" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="OrderSize">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderSize__SizeI__2A4B4B5E">
+    <End Role="Sizes" Type="Self.Size" Multiplicity="0..1" />
+    <End Role="OrderSize" Type="Self.OrderSize" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sizes">
+        <PropertyRef Name="SizeID" />
+      </Principal>
+      <Dependent Role="OrderSize">
+        <PropertyRef Name="SizeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ImageCodeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CustomerPayments" EntityType="Self.CustomerPayment" />
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="Materials" EntityType="Self.Material" />
+    <EntitySet Name="OrderMaterials" EntityType="Self.OrderMaterial" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="OrderSizes" EntityType="Self.OrderSize" />
+    <EntitySet Name="Payments" EntityType="Self.Payment" />
+    <EntitySet Name="Sizes" EntityType="Self.Size" />
+    <EntitySet Name="Staffs" EntityType="Self.Staff" />
+    <AssociationSet Name="FK__CustomerP__Custo__1DE57479" Association="Self.FK__CustomerP__Custo__1DE57479">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="CustomerPayment" EntitySet="CustomerPayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CustomerP__Payme__1ED998B2" Association="Self.FK__CustomerP__Payme__1ED998B2">
+      <End Role="Payments" EntitySet="Payments" />
+      <End Role="CustomerPayment" EntitySet="CustomerPayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__Customer__22AA2996" Association="Self.FK__Orders__Customer__22AA2996">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderMate__Mater__267ABA7A" Association="Self.FK__OrderMate__Mater__267ABA7A">
+      <End Role="Materials" EntitySet="Materials" />
+      <End Role="OrderMaterial" EntitySet="OrderMaterials" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderMate__Order__25869641" Association="Self.FK__OrderMate__Order__25869641">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderMaterial" EntitySet="OrderMaterials" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__StaffId__21B6055D" Association="Self.FK__Orders__StaffId__21B6055D">
+      <End Role="Staffs" EntitySet="Staffs" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderSize__Order__29572725" Association="Self.FK__OrderSize__Order__29572725">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderSize" EntitySet="OrderSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderSize__SizeI__2A4B4B5E" Association="Self.FK__OrderSize__SizeI__2A4B4B5E">
+      <End Role="Sizes" EntitySet="Sizes" />
+      <End Role="OrderSize" EntitySet="OrderSizes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
