@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="Newsapi.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Newsapi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:data="using:Newsapi.Models"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>        
+        <GridView Name="NewsItemGrid" ItemClick="NewsItemGrid_ItemClick" 
+                  IsItemClickEnabled="True" ItemsSource="{x:Bind Articles}">
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="data:Article">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Width="auto" Margin="10">                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>                            
+                            <Image Grid.Column="0" Width="80" Height="80">
+                                <Image.Source>
+                                    <BitmapImage UriSource="{Binding urlToImage}"/>
+                                </Image.Source>
+                            </Image>
+                            <StackPanel Grid.Column="1" Background="White">
+                                <TextBlock Text="{x:Bind author}"
+                                           FontSize="10"
+                                           Foreground="Brown"/>
+                                <TextBlock Text="{x:Bind title}"
+                                           FontSize="20"
+                                           Foreground="Brown"/>
+                                <TextBlock Text="{x:Bind description}"/>
+                                
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+
+    </Grid>
+</Page>
